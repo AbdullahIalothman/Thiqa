@@ -1,0 +1,275 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.header {
+
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.header-contetn {
+    width: 80%;
+    margin: auto;
+
+}
+
+.logo {
+    width: 75%;
+    margin-right: 0%;
+    /* background-color: seagreen; */
+    float: left;
+}
+
+.claer {
+    clear: both;
+}
+
+.logo img {
+    width: 30%;
+    margin-left: -15%;
+    margin-top: -6px;
+}
+
+.nav {
+    width: 60%;
+    /* height: 80px; */
+    /* background-color: sienna; */
+    list-style-type: none;
+    float: left;
+
+}
+
+.nav>li {
+    display: inline-block;
+    margin: 30px 10px;
+
+    text-align: center;
+}
+
+.nav>li>a:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: #6195ff;
+    transition: width 0.5s;
+}
+
+.nav>li>a:hover:after {
+    width: 100%;
+}
+
+.nav>li>a.active:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #6195ff;
+    transition: width 0.5s;
+}
+
+
+
+.nav>li>a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+
+
+}
+
+.doropdown {
+    position: relative;
+}
+
+.doropdown-menu {
+    display: block;
+    width: 150px;
+    text-align: center;
+    left: -50%;
+    top: 70%;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background-color: #6195ff;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+
+.doropdown-menu a {
+    display: block;
+    color: #ffffff;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.doropdown:hover .doropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.claer {
+    clear: both;
+}
+
+.home {
+    background-color: #6195ff;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.home-content {
+    position: absolute;
+    font-size: 20;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.title {
+    color: #ffffff;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.home-desc {
+    color: wheat;
+    margin: 10px;
+    letter-spacing: 2px;
+    line-height: 25px;
+}
+
+.home .btn {
+    width: 150px;
+    padding: 15px 0;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.get-start {
+    margin: 10px;
+    background-color: #ffffff;
+
+}
+
+.learn {
+    background-color: #616C81;
+    box-shadow: inset 0 -4px 3px black;
+    color: #ffffff;
+}
+
+.hover-opacity:hover {
+    box-shadow: inset 0 -4px 3px black;
+    opacity: 0.8;
+    background-color: #616C81;
+
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-header .section-title {
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.section-header .line {
+    display: block;
+    margin: 0px auto 70px auto;
+    height: 5px;
+    width: 60px;
+    background-color: #6195ff;
+}
+
+.pd-y {
+    padding: 120px 0px;
+}
+
+
+
+.about-content {
+    overflow: hidden;
+}
+
+.about-item {
+    width: 30%;
+    float: left;
+    text-align: center;
+    border: 1px solid #e8e8e8;
+    padding: 50px 20px;
+}
+
+.about-item.mg {
+    margin: 0px 5%;
+}
+
+.about-item .icon {
+    color: #616C81;
+    margin-bottom: 10px;
+}
+
+.about-item-title {
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.about-item-desc {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.about-item-link {
+    color: #6195ff;
+    text-transform: capitalize;
+}
+
+.ltr-effect {
+    background-color: lightgray;
+    position: relative;
+}
+
+.ltr-effect:after {
+
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #333;
+    z-index: -1;
+    transition: width.5s;
+}
+
+.ltr-effect:hover:after {
+    width: 100%;
+}
+
+.about-item:hover .about-item-title {
+    color: #ffffff;
+}
